@@ -1,31 +1,59 @@
 .App {
   min-height: 100vh;
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  background: rgb(237, 227, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  align-items: center;
+  width: 100%;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 0.5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 255, 0.5);
+  color: #000000;
+  margin: 0;
 }
 
 .search-form {
   min-height: 10vh;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .search-bar {
-  width: 50%;
+  width: 90%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   border: none;
   padding: 10px;
 }
 
 .search-button {
-  background: rgb(164, 102, 206);
+  background: rgba(0, 0, 255, 0.5);
   border: none;
+  font-size: 1rem;
+  outline: none;
   padding: 10px 20px;
-  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #000000;
 }
 
 .recipes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  font-size: large;
+  width: 100%;
+  font-size: 1rem;
 }

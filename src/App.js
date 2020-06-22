@@ -3,12 +3,12 @@ import Recipe from "./Recipe";
 import "./App.css";
 
 const App = () => {
-  const APP_ID = "";
-  const APP_KEY = "";
+  const APP_ID = "55836921";
+  const APP_KEY = "96561fd3dfcb4ee4090ba49a90af0b1a";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chicken");
+  const [query, setQuery] = useState("cake");
 
   useEffect(() => {
     getRecipes();
@@ -35,6 +35,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1 className="page-title" align="center">
+        SEARCH FOR RECIPES
+      </h1>
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
@@ -43,7 +46,7 @@ const App = () => {
           onChange={updateSearch}
         />
         <button className="search-button" type="submit">
-          Search
+          SEARCH
         </button>
       </form>
       <div className="recipes">
