@@ -1,6 +1,7 @@
 .App {
   min-height: 100vh;
-  background: rgb(237, 227, 241);
+  /* background: rgb(237, 227, 241); */
+  background: #e4dddd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,15 +11,15 @@
 .page-title {
   align-items: center;
   width: 100%;
-  letter-spacing: 2px;
-  font-weight: bold;
+  letter-spacing: 3px;
   padding: 0.5rem 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 1.2rem;
-  background: rgba(0, 0, 255, 0.5);
-  color: #000000;
-  margin: 0;
+  font-size: 3rem;
+  background: #ef233c;
+  color: #ffffff;
+  margin-top: -0.1rem;
 }
 
 .search-form {
@@ -39,14 +40,15 @@
 }
 
 .search-button {
-  background: rgba(0, 0, 255, 0.5);
+  background: #ef233c;
   border: none;
+  font-weight: 200;
   font-size: 1rem;
   outline: none;
   padding: 9px 20px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .recipes {
